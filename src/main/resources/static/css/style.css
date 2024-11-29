@@ -88,15 +88,6 @@
     -fx-text-fill: #B8860B;
 }
 
-.text-medal {
-    -fx-font-family: "Papyrus";
-    -fx-font-size: 30px;
-    -fx-font-weight: bold;
-    -fx-fill: #FFD700;
-    -fx-effect: dropshadow(gaussian, black, 3, 0.7, 1, 1);
-    -fx-text-fill: #FFD700;
-}
-
 .text-game {
     -fx-font-family: "Papyrus";
     -fx-font-size: 32px;
@@ -110,3 +101,11 @@
     overflow: hidden;
 }
 
+.text-medal {
+    -fx-font-family: "Papyrus";
+    -fx-font-size: 30px;
+    -fx-font-weight: bold;
+    -fx-fill: #FFD700;
+    -fx-effect: dropshadow(gaussian, black, 3, 0.7, 1, 1);
+    -fx-text-fill: #FFD700;
+}
