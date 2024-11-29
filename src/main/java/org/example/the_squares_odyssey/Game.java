@@ -13,7 +13,7 @@ public class Game extends Application {
 
     @Override
     public void start(Stage primaryStage) {
-        Image backgroundImage = new Image(getClass().getResource("/static/images/arenas/arena_game.jfif").toExternalForm());
+        Image backgroundImage = new Image(getClass().getResource("/static/images/amphitheaters/arena_5.jfif").toExternalForm());
         ImageView backgroundImageView = new ImageView(backgroundImage);
         backgroundImageView.setFitWidth(1000);
         backgroundImageView.setFitHeight(700);
@@ -22,10 +22,10 @@ public class Game extends Application {
         textGame.setTranslateY(-280);
         textGame.getStyleClass().add("text-main");
 
-        Image imageButtonPlay = new Image(getClass().getResource("/static/images/elements/play_button.png").toExternalForm());
+        Image imageButtonPlay = new Image(getClass().getResource("/static/images/assets/play_button.png").toExternalForm());
         ImageView imageViewButton = new ImageView(imageButtonPlay);
-        imageViewButton.setFitWidth(130.0);
-        imageViewButton.setFitHeight(50.0);
+        imageViewButton.setFitWidth(130);
+        imageViewButton.setFitHeight(50);
 
         Button playButton = new Button();
         playButton.getStyleClass().add("border-animation");
