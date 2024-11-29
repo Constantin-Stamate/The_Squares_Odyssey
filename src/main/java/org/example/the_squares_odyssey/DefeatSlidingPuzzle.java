@@ -19,7 +19,7 @@ public class DefeatSlidingPuzzle extends Application {
     public void start(Stage primaryStage) {
         StackPane root = new StackPane();
 
-        Image backgroundImage = new Image(getClass().getResource("/static/images/losses/defeat_3.png").toExternalForm());
+        Image backgroundImage = new Image(getClass().getResource("/static/images/defeats/defeat_3.png").toExternalForm());
         ImageView backgroundImageView = new ImageView(backgroundImage);
         backgroundImageView.setFitWidth(1000);
 
@@ -28,7 +28,7 @@ public class DefeatSlidingPuzzle extends Application {
         textDefeat.getStyleClass().add("text-defeat");
 
         Button back = new Button();
-        Image imageView = new Image(getClass().getResource("/static/images/elements/back_button.png").toExternalForm());
+        Image imageView = new Image(getClass().getResource("/static/images/assets/back_button.png").toExternalForm());
         ImageView imageBackView = new ImageView(imageView);
         back.setGraphic(imageBackView);
         imageBackView.setFitWidth(48);
@@ -44,7 +44,7 @@ public class DefeatSlidingPuzzle extends Application {
 
         WebView webView = new WebView();
         WebEngine webEngine = webView.getEngine();
-        String path = Paths.get("src/main/resources/templates/defeat.html").toUri().toString();
+        String path = Paths.get("src/main/resources/templates/defeat-game.html").toUri().toString();
         webView.setStyle("-fx-background-color: transparent;");
         webView.setOpacity(0.1);
 
