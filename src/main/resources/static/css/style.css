@@ -1,0 +1,112 @@
+.border-animation {
+    -fx-padding: 5px;
+    -fx-border-width: 2;
+    -fx-border-color: gold;
+    -fx-border-style: solid;
+    -fx-background-color: linear-gradient(to bottom, #fff8dc, #ffd700);
+    -fx-font-family: "Garamond";
+    -fx-font-size: 5px;
+    -fx-text-fill: #00008b;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.5), 5, 0, 0, 1);
+    -fx-cursor: hand;
+}
+
+.border-animation:hover {
+    -fx-opacity: 80%;
+    -fx-background-color: linear-gradient(to bottom, #ffd700, #fff8dc);
+    -fx-border-color: darkgoldenrod;
+    -fx-text-fill: #fff;
+}
+
+.round-image-button {
+    -fx-padding: 0;
+    -fx-background-radius: 50%;
+    -fx-border-radius: 50%;
+    -fx-background-color: transparent;
+    -fx-background-size: cover;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(gaussian, rgba(255, 255, 0, 0.6), 15, 0, 0, 0);
+}
+
+.round-image-button:hover {
+    -fx-effect: dropshadow(gaussian, rgba(255, 255, 0, 0.8), 20, 0.3, 0, 0);
+}
+
+.animation-shine {
+    -fx-background-size: cover;
+    -fx-background-color: transparent;
+    -fx-background-radius: 10px;
+    -fx-padding: 20px;
+    -fx-effect: dropshadow(gaussian, rgba(255, 215, 0, 0.7), 20, 0, 0, 0);
+    -fx-cursor: hand;
+    -fx-border-radius: 10px;
+    -fx-border-width: 0;
+    -fx-border-color: transparent;
+    -fx-animation: glow 2s infinite alternate;
+}
+
+@keyframes glow {
+    0% {
+        -fx-effect: dropshadow(gaussian, rgba(255, 215, 0, 0.4), 10, 0.5, 0, 0);
+    }
+    50% {
+        -fx-effect: dropshadow(gaussian, rgba(255, 215, 0, 0.8), 25, 0.7, 0, 0);
+    }
+    100% {
+        -fx-effect: dropshadow(gaussian, rgba(255, 215, 0, 0.4), 10, 0.5, 0, 0);
+    }
+}
+
+.animation-shine:hover {
+    -fx-effect: dropshadow(gaussian, rgba(255, 215, 0, 1.0), 30, 0.7, 0, 0);
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+.text-main {
+    -fx-font-family: "Papyrus";
+    -fx-font-size: 30px;
+    -fx-font-weight: bold;
+    -fx-fill: saddlebrown;
+    -fx-effect: dropshadow(gaussian, black, 3, 0.7, 1, 1);
+    -fx-text-fill: saddlebrown;
+}
+
+.text-defeat {
+    -fx-font-family: "Papyrus";
+    -fx-font-size: 30px;
+    -fx-font-weight: bold;
+    -fx-fill: #B8860B;
+    -fx-effect: dropshadow(gaussian, black, 3, 0.7, 1, 1);
+    -fx-text-fill: #B8860B;
+}
+
+.text-medal {
+    -fx-font-family: "Papyrus";
+    -fx-font-size: 30px;
+    -fx-font-weight: bold;
+    -fx-fill: #FFD700;
+    -fx-effect: dropshadow(gaussian, black, 3, 0.7, 1, 1);
+    -fx-text-fill: #FFD700;
+}
+
+.text-game {
+    -fx-font-family: "Papyrus";
+    -fx-font-size: 32px;
+    -fx-font-weight: bold;
+    -fx-fill: yellow;
+    -fx-effect: dropshadow(gaussian, black, 3, 0.7, 1, 1);
+    -fx-text-fill: yellow;
+    -fx-translate-y: -280;
+    -fx-translate-x: 0;
+    animation: typing 3s steps(30) forwards;
+    overflow: hidden;
+}
+
