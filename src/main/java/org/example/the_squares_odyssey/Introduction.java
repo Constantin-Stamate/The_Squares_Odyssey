@@ -11,18 +11,17 @@ import javafx.stage.Stage;
 public class Introduction extends Application {
     @Override
     public void start(Stage primaryStage) {
-        Media media = new Media(getClass().getResource("/static/images/videos/video.mp4").toExternalForm());
+        Media media = new Media(getClass().getResource("/static/images/videos/video_intro.mp4").toExternalForm());
         MediaPlayer mediaPlayer = new MediaPlayer(media);
         MediaView mediaView = new MediaView(mediaPlayer);
 
-        mediaView.setFitWidth(755);
-        mediaView.setFitHeight(700);
-        mediaView.setPreserveRatio(false);
+        mediaView.setFitWidth(765);
+        mediaView.setPreserveRatio(true);
 
         StackPane layout = new StackPane();
         layout.getChildren().add(mediaView);
 
-        Scene scene = new Scene(layout, 1000, 700);
+        Scene scene = new Scene(layout, 765, 700);
         primaryStage.setScene(scene);
         primaryStage.setTitle("The Square's Odyssey");
         primaryStage.show();
