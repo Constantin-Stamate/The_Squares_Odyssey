@@ -25,7 +25,7 @@ public class Choice extends Application {
     public void start(Stage primaryStage) {
         stage = primaryStage;
 
-        Image backgroundImage = new Image(getClass().getResource("/static/images/arenas/arena_choice.jfif").toExternalForm());
+        Image backgroundImage = new Image(getClass().getResource("/static/images/amphitheaters/arena_4.jfif").toExternalForm());
         ImageView backgroundImageView = new ImageView(backgroundImage);
         backgroundImageView.setFitWidth(1000);
         backgroundImageView.setFitHeight(700);
@@ -39,9 +39,9 @@ public class Choice extends Application {
         buttonBox.setTranslateY(0);
         buttonBox.setPadding(new Insets(10, 10, 40, 10));
 
-        ImageView god1 = new ImageView(new Image(getClass().getResource("/static/images/gods/god_1.png").toExternalForm()));
-        ImageView god2 = new ImageView(new Image(getClass().getResource("/static/images/gods/god_2.png").toExternalForm()));
-        ImageView god3 = new ImageView(new Image(getClass().getResource("/static/images/gods/god_3.png").toExternalForm()));
+        ImageView god1 = new ImageView(new Image(getClass().getResource("/static/images/deities/god_1.png").toExternalForm()));
+        ImageView god2 = new ImageView(new Image(getClass().getResource("/static/images/deities/god_2.png").toExternalForm()));
+        ImageView god3 = new ImageView(new Image(getClass().getResource("/static/images/deities/god_3.png").toExternalForm()));
 
         god1.setFitWidth(120);
         god1.setFitHeight(170);
@@ -96,8 +96,8 @@ public class Choice extends Application {
 
     private void handleGodClick(ImageView zeu) {
         FadeTransition fade = new FadeTransition(Duration.seconds(2), zeu);
-        fade.setFromValue(1.0);
-        fade.setToValue(0.0);
+        fade.setFromValue(1);
+        fade.setToValue(0);
         fade.play();
     }
 
