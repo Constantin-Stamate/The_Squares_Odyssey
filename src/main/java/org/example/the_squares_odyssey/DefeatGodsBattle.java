@@ -19,7 +19,7 @@ public class DefeatGodsBattle extends Application {
     public void start(Stage primaryStage) {
         StackPane root = new StackPane();
 
-        Image backgroundImage = new Image(getClass().getResource("/static/images/losses/defeat_1.jpg").toExternalForm());
+        Image backgroundImage = new Image(getClass().getResource("/static/images/defeats/defeat_1.jpg").toExternalForm());
         ImageView backgroundImageView = new ImageView(backgroundImage);
 
         Text textDefeat = new Text("You have lost the Battle of the Gods!");
@@ -27,7 +27,7 @@ public class DefeatGodsBattle extends Application {
         textDefeat.getStyleClass().add("text-defeat");
 
         Button back = new Button();
-        Image imageView = new Image(getClass().getResource("/static/images/elements/back_button.png").toExternalForm());
+        Image imageView = new Image(getClass().getResource("/static/images/assets/back_button.png").toExternalForm());
         ImageView imageBackView = new ImageView(imageView);
         back.setGraphic(imageBackView);
         imageBackView.setFitWidth(48);
@@ -43,7 +43,7 @@ public class DefeatGodsBattle extends Application {
 
         WebView webView = new WebView();
         WebEngine webEngine = webView.getEngine();
-        String path = Paths.get("src/main/resources/templates/defeat.html").toUri().toString();
+        String path = Paths.get("src/main/resources/templates/defeat-game.html").toUri().toString();
         webView.setStyle("-fx-background-color: transparent;");
         webView.setOpacity(0.1);
 
