@@ -27,7 +27,7 @@ public class MemoryMastery extends Application {
     private final int cardWidth = 106;
     private final int cardHeight = 158;
     private int triesCount = 0;
-    private static final int MAX_TRIES = 15;
+    private static final int MAX_TRIES = 14;
 
 
     private final ArrayList<Card> cardSet = new ArrayList<>();
@@ -43,7 +43,7 @@ public class MemoryMastery extends Application {
         setupCards();
         shuffleCards();
 
-        Image backgroundImage = new Image(getClass().getResource("/static/images/arenas/arena_3.jpg").toExternalForm());
+        Image backgroundImage = new Image(getClass().getResource("/static/images/amphitheaters/arena_2.jpg").toExternalForm());
         ImageView backgroundImageView = new ImageView(backgroundImage);
         backgroundImageView.setFitWidth(1000);
         backgroundImageView.setFitHeight(700);
@@ -53,7 +53,7 @@ public class MemoryMastery extends Application {
         textMemoryMastery.getStyleClass().add("text-game");
 
         Button back = new Button();
-        Image imageBack = new Image(getClass().getResource("/static/images/elements/back_button.png").toExternalForm());
+        Image imageBack = new Image(getClass().getResource("/static/images/assets/back_button.png").toExternalForm());
         ImageView imageBackView = new ImageView(imageBack);
         back.setGraphic(imageBackView);
         imageBackView.setFitWidth(48);
@@ -105,12 +105,12 @@ public class MemoryMastery extends Application {
 
     private void setupCards() {
         for (String cardName : cardList) {
-            Image cardImage = new Image(getClass().getResource("/static/images/cards/" + cardName + ".jpg").toExternalForm());
+            Image cardImage = new Image(getClass().getResource("/static/images/icons/" + cardName + ".jpg").toExternalForm());
             cardSet.add(new Card(cardName, cardImage));
             cardSet.add(new Card(cardName, cardImage));
         }
 
-        cardBackImage = new Image(getClass().getResource("/static/images/cards/card_back.jpg").toExternalForm());
+        cardBackImage = new Image(getClass().getResource("/static/images/icons/back_card.jpg").toExternalForm());
     }
 
     private void shuffleCards() {
