@@ -19,7 +19,7 @@ public class MedalMemoryMastery extends Application {
     public void start(Stage primaryStage) {
         StackPane root = new StackPane();
 
-        Image backgroundImage = new Image(getClass().getResource("/static/images/medals/medalie_16.png").toExternalForm());
+        Image backgroundImage = new Image(getClass().getResource("/static/images/awards/medalie_3.png").toExternalForm());
         ImageView backgroundImageView = new ImageView(backgroundImage);
         backgroundImageView.setFitWidth(800);
         backgroundImageView.setFitHeight(780);
@@ -29,7 +29,7 @@ public class MedalMemoryMastery extends Application {
         textMedalMemoryMastery.getStyleClass().add("text-medal");
 
         Button back = new Button();
-        Image imageView = new Image(getClass().getResource("/static/images/elements/back_button.png").toExternalForm());
+        Image imageView = new Image(getClass().getResource("/static/images/assets/back_button.png").toExternalForm());
         ImageView imageBackView = new ImageView(imageView);
         back.setGraphic(imageBackView);
         imageBackView.setFitWidth(48);
@@ -45,7 +45,7 @@ public class MedalMemoryMastery extends Application {
 
         WebView webView = new WebView();
         WebEngine webEngine = webView.getEngine();
-        String path = Paths.get("src/main/resources/templates/pride_2.html").toUri().toString();
+        String path = Paths.get("src/main/resources/templates/pride-memory-mastery.html").toUri().toString();
         webView.setStyle("-fx-background-color: transparent;");
         webView.setOpacity(0.1);
 
