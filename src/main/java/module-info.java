@@ -7,8 +7,8 @@ module org.example.the_squares_odyssey {
     requires javafx.media;
     requires javafx.web;
     requires java.desktop;
-    requires javafx.graphics;
     requires javafx.swing;
+    requires javafx.graphics;
 
     exports org.example.the_squares_odyssey;
     opens org.example.the_squares_odyssey to javafx.fxml;
