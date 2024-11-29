@@ -25,7 +25,7 @@ public class GodsBattle extends Application {
     private double coefficientX = 200;
     private final double coefficientLeft = 200;
     private final double coefficientDown = 50;
-    private boolean equal = false;
+    private boolean verification = false;
     private int countTries = 0;
     private int countGods = 0;
     private int countGoddess = 0;
@@ -55,12 +55,12 @@ public class GodsBattle extends Application {
             }
         }
 
-        Image backgroundImage = new Image(getClass().getResource("/static/images/arenas/arena_1.jfif").toExternalForm());
+        Image backgroundImage = new Image(getClass().getResource("/static/images/amphitheaters/arena_1.jfif").toExternalForm());
         ImageView backgroundImageView = new ImageView(backgroundImage);
         backgroundImageView.setFitWidth(1000);
         backgroundImageView.setFitHeight(700);
 
-        Image parchmentImage = new Image(getClass().getResource("/static/images/elements/parchment.png").toExternalForm());
+        Image parchmentImage = new Image(getClass().getResource("/static/images/assets/parchment.png").toExternalForm());
         ImageView parchmentImageView = new ImageView(parchmentImage);
         parchmentImageView.setFitWidth(500);
         parchmentImageView.setFitHeight(680);
@@ -74,7 +74,7 @@ public class GodsBattle extends Application {
         Image deity = new Image(getClass().getResource("/static/images/entities/deity.png").toExternalForm());
         ImageView deityView = new ImageView(deity);
 
-        Image tabel = new Image(getClass().getResource("/static/images/tables/tabel_1.png").toExternalForm());
+        Image tabel = new Image(getClass().getResource("/static/images/grids/tabel_1.png").toExternalForm());
         ImageView tabelView = new ImageView(tabel);
         tabelView.getStyleClass().add("border-animation");
         tabelView.getStyleClass().add("animation-shine");
@@ -83,7 +83,7 @@ public class GodsBattle extends Application {
         tabelView.setTranslateY(-230 + coefficientDown);
         tabelView.setTranslateX(0 - coefficientLeft);
 
-        Image grid = new Image(getClass().getResource("/static/images/tables/tabel_2.jpg").toExternalForm());
+        Image grid = new Image(getClass().getResource("/static/images/grids/tabel_2.jpg").toExternalForm());
         ImageView gridView = new ImageView(grid);
         gridView.setFitHeight(300);
         gridView.setFitWidth(300);
@@ -217,7 +217,7 @@ public class GodsBattle extends Application {
         });
 
         Button back = new Button();
-        Image imageBack = new Image(getClass().getResource("/static/images/elements/back_button.png").toExternalForm());
+        Image imageBack = new Image(getClass().getResource("/static/images/assets/back_button.png").toExternalForm());
         ImageView imageBackView = new ImageView(imageBack);
         back.setGraphic(imageBackView);
         imageBackView.setFitWidth(48);
@@ -391,7 +391,7 @@ public class GodsBattle extends Application {
 
                     coefficientY += 63;
                     letterViewsAdd.clear();
-                    equal = gameLogic.equals(gameLogicImage);
+                    verification = gameLogic.equals(gameLogicImage);
 
                     gameLogicImage.clear();
                     if (countGods == 4) {
