@@ -33,17 +33,17 @@ public class SlidingPuzzle extends Application {
         tileSize = (dimension - 2 * margin) / size;
         int gridSize = dimension - 2 * margin;
 
-        Image backgroundImage = new Image(getClass().getResource("/static/images/arenas/arena_2.jfif").toExternalForm());
+        Image backgroundImage = new Image(getClass().getResource("/static/images/amphitheaters/arena_3.jfif").toExternalForm());
         ImageView backgroundImageView = new ImageView(backgroundImage);
         backgroundImageView.setFitWidth(1000);
         backgroundImageView.setFitHeight(700);
 
         Text puzzleText = new Text("Sliding Puzzle!");
-        puzzleText.setTranslateY(-280.0);
+        puzzleText.setTranslateY(-280);
         puzzleText.getStyleClass().add("text-game");
 
         Button back = new Button();
-        Image imageBack = new Image(getClass().getResource("/static/images/elements/back_button.png").toExternalForm());
+        Image imageBack = new Image(getClass().getResource("/static/images/assets/back_button.png").toExternalForm());
         ImageView imageBackView = new ImageView(imageBack);
         back.setGraphic(imageBackView);
         imageBackView.setFitWidth(48);
@@ -75,14 +75,14 @@ public class SlidingPuzzle extends Application {
     }
 
     private void loadImages() {
-        String[] imagePaths = {"/static/images/fragments/fragment_1.png", "/static/images/fragments/fragment_2.png",
-                "/static/images/fragments/fragment_3.png", "/static/images/fragments/fragment_5.png",
-                "/static/images/fragments/fragment_6.png", "/static/images/fragments/fragment_7.png",
-                "/static/images/fragments/fragment_8.png", "/static/images/fragments/fragment_9.png",
-                "/static/images/fragments/fragment_10.png", "/static/images/fragments/fragment_11.png",
-                "/static/images/fragments/fragment_12.png", "/static/images/fragments/fragment_13.png",
-                "/static/images/fragments/fragment_14.png", "/static/images/fragments/fragment_15.png",
-                "/static/images/fragments/fragment_16.png"};
+        String[] imagePaths = {"/static/images/scraps/fragment_1.png", "/static/images/scraps/fragment_2.png",
+                "/static/images/scraps/fragment_3.png", "/static/images/scraps/fragment_5.png",
+                "/static/images/scraps/fragment_6.png", "/static/images/scraps/fragment_7.png",
+                "/static/images/scraps/fragment_8.png", "/static/images/scraps/fragment_9.png",
+                "/static/images/scraps/fragment_10.png", "/static/images/scraps/fragment_11.png",
+                "/static/images/scraps/fragment_12.png", "/static/images/scraps/fragment_13.png",
+                "/static/images/scraps/fragment_14.png", "/static/images/scraps/fragment_15.png",
+                "/static/images/scraps/fragment_16.png"};
 
         for (int i = 0; i < nbTiles; i++) {
             tileImages[i] = new Image(getClass().getResource(imagePaths[i]).toExternalForm());
