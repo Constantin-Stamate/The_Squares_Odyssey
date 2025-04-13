@@ -19,13 +19,6 @@ The project was developed using **JavaFX**, **Maven**, and **Object-Oriented Pro
   <img src="src/main/resources/static/images/description/temple.png" alt="Game page"/>
 </p>
 
-**Rise of Champions: Intro**  
-   The introductory video showcases scenes from various sports, highlighting the athletes' strength and the intense challenges they face. We witness the athletes' hard-fought victories and their dedication. Towards the end, a mysterious temple appears, inviting us to uncover its secrets.
-
-<p align="center">
-  <img src="https://github.com/user-attachments/assets/3a0d7d7b-28ec-4e4f-89f4-9512f78d8cc9" width="700"/>
-</p>
-
 ## 🔱 How to Build
 
 To install the application, follow these steps:
