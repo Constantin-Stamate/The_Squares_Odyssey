@@ -23,30 +23,8 @@ The project was developed using **JavaFX**, **Maven**, and **Object-Oriented Pro
    The introductory video showcases scenes from various sports, highlighting the athletes' strength and the intense challenges they face. We witness the athletes' hard-fought victories and their dedication. Towards the end, a mysterious temple appears, inviting us to uncover its secrets.
 
 <p align="center">
-  <a href="https://github.com/user-attachments/assets/3a0d7d7b-28ec-4e4f-89f4-9512f78d8cc9" target="_blank">
-    <div style="position: relative; display: inline-block;">
-      <img src="src/main/resources/static/images/description/amphitheater.jpg" alt="AI Video Thumbnail" 
-           style="width: 1000px; height: 620px; object-fit: cover;" />
-      <img src="src/main/resources/static/images/description/play.png" alt="Play Button" 
-           style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 100px; height: 100px; 
-           animation: pulse 1.5s infinite;">
-    </div>
-  </a>
+  <img src="https://github.com/user-attachments/assets/3a0d7d7b-28ec-4e4f-89f4-9512f78d8cc9" width="700"/>
 </p>
-
-<style>
-  @keyframes pulse {
-    0% {
-      transform: translate(-50%, -50%) scale(1);
-    }
-    50% {
-      transform: translate(-50%, -50%) scale(1.1);
-    }
-    100% {
-      transform: translate(-50%, -50%) scale(1);
-    }
-  }
-</style>
 
 ## 🔱 How to Build
 
