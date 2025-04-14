@@ -10,9 +10,9 @@ import javafx.scene.layout.StackPane;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
 import javafx.util.Duration;
-import org.example.the_squares_odyssey.Choice;
-import org.example.the_squares_odyssey.DefeatGodsBattle;
-import org.example.the_squares_odyssey.MedalGodsBattle;
+import org.example.odyssey.Choice;
+import org.example.odyssey.DefeatGodsBattle;
+import org.example.odyssey.MedalGodsBattle;
 
 import java.util.ArrayList;
 import java.util.List;

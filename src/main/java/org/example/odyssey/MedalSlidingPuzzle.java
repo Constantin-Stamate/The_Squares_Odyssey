@@ -1,4 +1,4 @@
-package org.example.the_squares_odyssey;
+package org.example.odyssey;
 
 import javafx.application.Application;
 import javafx.scene.Scene;
@@ -13,18 +13,18 @@ import javafx.stage.Stage;
 
 import java.nio.file.Paths;
 
-public class MedalGodsBattle extends Application {
+public class MedalSlidingPuzzle extends Application {
 
     @Override
     public void start(Stage primaryStage) {
         StackPane root = new StackPane();
 
-        Image backgroundImage = new Image(getClass().getResource("/static/images/awards/medalie_1.png").toExternalForm());
+        Image backgroundImage = new Image(getClass().getResource("/static/images/awards/medalie_2.png").toExternalForm());
         ImageView backgroundImageView = new ImageView(backgroundImage);
         backgroundImageView.setFitWidth(800);
         backgroundImageView.setFitHeight(780);
 
-        Text textMedalMemoryMastery = new Text("You won the Battle of the Gods!");
+        Text textMedalMemoryMastery = new Text("You won the Sliding Puzzle Game!");
         textMedalMemoryMastery.setTranslateY(-280);
         textMedalMemoryMastery.getStyleClass().add("text-medal");
 
@@ -45,7 +45,7 @@ public class MedalGodsBattle extends Application {
 
         WebView webView = new WebView();
         WebEngine webEngine = webView.getEngine();
-        String path = Paths.get("src/main/resources/templates/pride-gods-battle.html").toUri().toString();
+        String path = Paths.get("src/main/resources/templates/pride-sliding-puzzle.html").toUri().toString();
         webView.setStyle("-fx-background-color: transparent;");
         webView.setOpacity(0.1);
 

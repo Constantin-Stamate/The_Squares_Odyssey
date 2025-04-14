@@ -1,4 +1,4 @@
-package org.example.the_squares_odyssey;
+package org.example.odyssey;
 
 import javafx.application.Application;
 import javafx.scene.Scene;
@@ -13,16 +13,16 @@ import javafx.stage.Stage;
 
 import java.nio.file.Paths;
 
-public class DefeatMemoryMastery extends Application {
+public class DefeatGodsBattle extends Application {
 
     @Override
     public void start(Stage primaryStage) {
         StackPane root = new StackPane();
 
-        Image backgroundImage = new Image(getClass().getResource("/static/images/defeats/defeat_2.png").toExternalForm());
+        Image backgroundImage = new Image(getClass().getResource("/static/images/defeats/defeat_1.jpg").toExternalForm());
         ImageView backgroundImageView = new ImageView(backgroundImage);
 
-        Text textDefeat = new Text("You have lost the Memory Mastery Game!");
+        Text textDefeat = new Text("You have lost the Battle of the Gods!");
         textDefeat.setTranslateY(-280);
         textDefeat.getStyleClass().add("text-defeat");
 

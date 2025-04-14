@@ -1,4 +1,4 @@
-package org.example.the_squares_odyssey;
+package org.example.odyssey;
 
 import javafx.application.Application;
 import javafx.scene.Scene;

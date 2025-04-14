@@ -1,4 +1,4 @@
-module org.example.the_squares_odyssey {
+module org.example.odyssey {
     requires javafx.controls;
     requires javafx.fxml;
 
@@ -10,8 +10,8 @@ module org.example.the_squares_odyssey {
     requires javafx.swing;
     requires javafx.graphics;
 
-    exports org.example.the_squares_odyssey;
-    opens org.example.the_squares_odyssey to javafx.fxml;
+    exports org.example.odyssey;
+    opens org.example.odyssey to javafx.fxml;
 
     exports games;
     opens games to javafx.fxml;

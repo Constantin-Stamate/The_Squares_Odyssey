@@ -1,4 +1,4 @@
-package org.example.the_squares_odyssey;
+package org.example.odyssey;
 
 import javafx.application.Application;
 import javafx.scene.Scene;
@@ -13,18 +13,20 @@ import javafx.stage.Stage;
 
 import java.nio.file.Paths;
 
-public class DefeatGodsBattle extends Application {
+public class MedalGodsBattle extends Application {
 
     @Override
     public void start(Stage primaryStage) {
         StackPane root = new StackPane();
 
-        Image backgroundImage = new Image(getClass().getResource("/static/images/defeats/defeat_1.jpg").toExternalForm());
+        Image backgroundImage = new Image(getClass().getResource("/static/images/awards/medalie_1.png").toExternalForm());
         ImageView backgroundImageView = new ImageView(backgroundImage);
+        backgroundImageView.setFitWidth(800);
+        backgroundImageView.setFitHeight(780);
 
-        Text textDefeat = new Text("You have lost the Battle of the Gods!");
-        textDefeat.setTranslateY(-280);
-        textDefeat.getStyleClass().add("text-defeat");
+        Text textMedalMemoryMastery = new Text("You won the Battle of the Gods!");
+        textMedalMemoryMastery.setTranslateY(-280);
+        textMedalMemoryMastery.getStyleClass().add("text-medal");
 
         Button back = new Button();
         Image imageView = new Image(getClass().getResource("/static/images/assets/back_button.png").toExternalForm());
@@ -33,8 +35,8 @@ public class DefeatGodsBattle extends Application {
         imageBackView.setFitWidth(48);
         imageBackView.setFitHeight(48);
         back.getStyleClass().add("round-image-button");
-        back.setTranslateY(-300);
-        back.setTranslateX(400);
+        back.setTranslateY(-330);
+        back.setTranslateX(350);
 
         back.setOnAction(e -> {
             Choice choice = new Choice();
@@ -43,7 +45,7 @@ public class DefeatGodsBattle extends Application {
 
         WebView webView = new WebView();
         WebEngine webEngine = webView.getEngine();
-        String path = Paths.get("src/main/resources/templates/defeat-game.html").toUri().toString();
+        String path = Paths.get("src/main/resources/templates/pride-gods-battle.html").toUri().toString();
         webView.setStyle("-fx-background-color: transparent;");
         webView.setOpacity(0.1);
 
@@ -51,11 +53,11 @@ public class DefeatGodsBattle extends Application {
 
         root.getChildren().add(backgroundImageView);
         root.getChildren().add(webView);
-        root.getChildren().add(textDefeat);
+        root.getChildren().add(textMedalMemoryMastery);
         root.getChildren().add(back);
         root.setOpacity(1);
 
-        Scene scene = new Scene(root, 1000, 700);
+        Scene scene = new Scene(root, 800, 750);
         scene.getStylesheets().add(getClass().getResource("/static/css/style.css").toExternalForm());
 
         primaryStage.setTitle("The Squares’ Odyssey");

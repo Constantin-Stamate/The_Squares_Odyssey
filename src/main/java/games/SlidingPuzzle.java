@@ -8,9 +8,9 @@ import javafx.scene.image.ImageView;
 import javafx.scene.layout.StackPane;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
-import org.example.the_squares_odyssey.Choice;
-import org.example.the_squares_odyssey.DefeatSlidingPuzzle;
-import org.example.the_squares_odyssey.MedalSlidingPuzzle;
+import org.example.odyssey.Choice;
+import org.example.odyssey.DefeatSlidingPuzzle;
+import org.example.odyssey.MedalSlidingPuzzle;
 
 import java.util.Random;
 

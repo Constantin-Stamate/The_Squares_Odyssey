@@ -11,9 +11,9 @@ import javafx.scene.layout.*;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
 import javafx.util.Duration;
-import org.example.the_squares_odyssey.Choice;
-import org.example.the_squares_odyssey.DefeatMemoryMastery;
-import org.example.the_squares_odyssey.MedalMemoryMastery;
+import org.example.odyssey.Choice;
+import org.example.odyssey.DefeatMemoryMastery;
+import org.example.odyssey.MedalMemoryMastery;
 
 import java.util.ArrayList;
 import java.util.Collections;

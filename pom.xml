@@ -103,7 +103,7 @@
                             <goal>jlink</goal>
                         </goals>
                         <configuration>
-                            <mainClass>org.example.the_squares_odyssey.Introduction</mainClass>
+                            <mainClass>org.example.odyssey.Introduction</mainClass>
                             <launcher>app</launcher>
                             <jlinkZipName>app</jlinkZipName>
                             <jlinkImageName>app</jlinkImageName>

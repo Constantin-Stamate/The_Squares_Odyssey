@@ -1,4 +1,4 @@
-package org.example.the_squares_odyssey;
+package org.example.odyssey;
 
 import games.MemoryMastery;
 import games.GodsBattle;
